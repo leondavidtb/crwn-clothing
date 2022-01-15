@@ -1,13 +1,13 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 
-import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
-import CheckoutItem from '../../components/checkout-item/checkout-item.component';
+import StripeCheckoutButton from "../../components/stripe-button/stripe-button.component";
+import CheckoutItem from "../../components/checkout-item/checkout-item.component";
 
 import {
   selectCartItems,
   selectCartTotal,
-} from '../../redux/cart/cart.selectors';
+} from "../../redux/cart/cart.selectors";
 
 import {
   CheckoutPageContainer,
@@ -15,7 +15,7 @@ import {
   HeaderBlockContainer,
   TotalContainer,
   WarningContainer,
-} from './checkout.styles';
+} from "./checkout.styles";
 
 const CheckoutPage = () => {
   const cartItems = useSelector(selectCartItems);

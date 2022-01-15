@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react';
-import { Route } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from "react";
+import { Route } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
-import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
-import CollectionPageContainer from '../collection/collection.container';
+import CollectionsOverviewContainer from "../../components/collections-overview/collections-overview.container";
+import CollectionPageContainer from "../collection/collection.container";
 
 const ShopPage = ({ fetchCollectionsStart, match }) => {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
   }, [fetchCollectionsStartHandler]);
 
   return (
-    <div className='shop-page'>
+    <div className="shop-page">
       <Route
         exact
         path={`${match.path}`}

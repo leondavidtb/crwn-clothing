@@ -1,11 +1,11 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React from "react";
+import { useDispatch } from "react-redux";
 
 import {
   clearItemFromCart,
   addItem,
   removeItem,
-} from '../../redux/cart/cart.actions';
+} from "../../redux/cart/cart.actions";
 
 import {
   CheckoutItemContainer,
@@ -13,7 +13,7 @@ import {
   TextContainer,
   QuantityContainer,
   RemoveButtonContainer,
-} from './checkout-item.styles';
+} from "./checkout-item.styles";
 
 const CheckoutItem = ({ cartItem }) => {
   const { name, imageUrl, price, quantity } = cartItem;
@@ -25,7 +25,7 @@ const CheckoutItem = ({ cartItem }) => {
   return (
     <CheckoutItemContainer>
       <ImageContainer>
-        <img src={imageUrl} alt='item' />
+        <img src={imageUrl} alt="item" />
       </ImageContainer>
       <TextContainer>{name}</TextContainer>
       <QuantityContainer>

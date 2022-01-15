@@ -1,17 +1,17 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 
-import CartItem from '../cart-item/cart-item.component';
-import { selectCartItems } from '../../redux/cart/cart.selectors';
-import { toggleCartHidden } from '../../redux/cart/cart.actions.js';
+import CartItem from "../cart-item/cart-item.component";
+import { selectCartItems } from "../../redux/cart/cart.selectors";
+import { toggleCartHidden } from "../../redux/cart/cart.actions.js";
 
 import {
   CartDropdownContainer,
   CartDropdownButton,
   EmptyMessageContainer,
   CartItemsContainer,
-} from './cart-dropdown.styles';
+} from "./cart-dropdown.styles";
 
 const CartDropdown = () => {
   const dispatch = useDispatch();
@@ -30,7 +30,7 @@ const CartDropdown = () => {
       </CartItemsContainer>
       <CartDropdownButton
         onClick={() => {
-          history.push('/checkout');
+          history.push("/checkout");
           dispatch(toggleCartHidden());
         }}
       >
