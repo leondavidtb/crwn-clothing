@@ -16,6 +16,7 @@ class ErrorBoundary extends React.Component {
   }
 
   static getDerivedStateFromError(error) {
+    // process the error
     return { hasErrored: true };
   }
 
@@ -28,7 +29,7 @@ class ErrorBoundary extends React.Component {
       return (
         <ErrorImageOverlay>
           <ErrorImageContainer imageUrl="https://i.imgur.com/yW2W9SC.png" />
-          <ErrorImageText>Ops! This page os broken.</ErrorImageText>
+          <ErrorImageText>Sorry this page is broken</ErrorImageText>
         </ErrorImageOverlay>
       );
     }
