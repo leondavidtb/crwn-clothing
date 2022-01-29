@@ -9,7 +9,6 @@ Clothing shop made using React & firebase with Stripe payments implemented.
 ✔️ Session storage and persistence <br />
 ✔️ Asynchronous events handling <br />
 ✔️ Stripe Payments <br />
-✔️ Tests with Jest <br />
 
 ## Technologies used 🛠️
 
